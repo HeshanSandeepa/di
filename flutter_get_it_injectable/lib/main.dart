@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_get_it_injectable/injection.dart';
+import 'package:flutter_get_it_injectable/quote_repository.dart';
+import 'package:get_it/get_it.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  configureDependencies();
   runApp(MyApp());
 }
 
@@ -17,20 +22,22 @@ class MyApp extends StatelessWidget {
 class MyQuotePage extends StatefulWidget {
   final String title;
 
-  const MyQuotePage({required this.title});
+  const MyQuotePage({super.key, required this.title});
 
   @override
   _MyQuotePageState createState() => _MyQuotePageState();
 }
 
 class _MyQuotePageState extends State<MyQuotePage> {
-  final List _data = [
-    {
-      "quote": "Simplicity is a great virtue.",
-      "author": "Edsger Wybe Dijkstra"
-    },
-    {"quote": "Progress and dont look back.", "author": "Michael Nielsen"}
-  ];
+  late QuoteRepository _quoteRepository;
+  late Future<List> _futureQuote;
+  @override
+  void initState() {
+    super.initState();
+    _quoteRepository = GetIt.instance.get<QuoteRepository>(param1: "testing");
+    _futureQuote = _quoteRepository.getQuotes();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,12 +45,24 @@ class _MyQuotePageState extends State<MyQuotePage> {
           title: Text(widget.title),
         ),
         body: Center(
-          child: ListView.builder(
-            itemCount: _data.length,
-            itemBuilder: (context, index) =>
-                _QuoteItem(item: _data[index], index: index),
-          ),
-        ));
+            child: FutureBuilder<List>(
+                future: _futureQuote,
+                builder: (context, AsyncSnapshot<List> snapData) {
+                  if (snapData.connectionState == ConnectionState.waiting) {
+                    return const Center(
+                        child: Text('Please wait its loading...'));
+                  } else {
+                    if (snapData.hasError) {
+                      return Center(child: Text('Error: ${snapData.error}'));
+                    } else {
+                      return ListView.builder(
+                        itemCount: snapData.data?.length,
+                        itemBuilder: (context, index) => _QuoteItem(
+                            item: snapData.data?[index], index: index),
+                      );
+                    }
+                  }
+                })));
   }
 }
 
@@ -51,7 +70,7 @@ class _QuoteItem extends StatelessWidget {
   final dynamic item;
   final int index;
 
-  _QuoteItem({required this.item, required this.index});
+  const _QuoteItem({required this.item, required this.index});
 
   @override
   Widget build(BuildContext context) {
