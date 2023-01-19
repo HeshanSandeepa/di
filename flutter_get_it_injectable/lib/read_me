@@ -1,0 +1,8 @@
+@injectable — Factory method
+This declaration allows dependencies to instantiate a new class whenever the corresponding invocation is called.
+
+@singleton
+This declaration allows dependencies to be singleton i.e. limiting its instantiation to only one.
+
+@lazySingleton
+This is also similar to singleton except it is only created when it is really required by the code.
