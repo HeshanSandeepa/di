@@ -1,0 +1,14 @@
+Dependency Injection
+
+01. This is a once solution for IoC ( Inversion of Control )
+02. Simply provides dependent objects for the classes where needed, so dependent class don't have to
+create them. This reduces tight coupling between classes.
+
+Types of DI in flutter
+
+01. Constructor Injection
+02. Inherited Widget
+03. get-it package
+04. Provider
+
+
