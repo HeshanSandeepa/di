@@ -15,6 +15,7 @@ void main() {
   // getIt.registerSingleton<Database>(SqlDatabase());
   // getIt.registerSingleton<AuthRepository>(
   //     FirebaseAuthRepository(getIt<Database>()));
+  //
   runApp(const MyApp());
 }
 
