@@ -24,8 +24,9 @@ import com.example.android.hilt.data.LoggerLocalDataSource
 import com.example.android.hilt.navigator.AppNavigator
 import com.example.android.hilt.navigator.AppNavigatorImpl
 import com.example.android.hilt.util.DateFormatter
+import javax.inject.Inject
 
-class ServiceLocator(applicationContext: Context) {
+class ServiceLocator @Inject constructor(applicationContext: Context) {
 
     private val logsDatabase = Room.databaseBuilder(
         applicationContext,

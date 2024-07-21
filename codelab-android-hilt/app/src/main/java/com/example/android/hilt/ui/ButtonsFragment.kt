@@ -25,17 +25,22 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.android.hilt.LogApplication
 import com.example.android.hilt.R
+import com.example.android.hilt.data.LoggerDataSource
 import com.example.android.hilt.data.LoggerLocalDataSource
 import com.example.android.hilt.navigator.AppNavigator
 import com.example.android.hilt.navigator.Screens
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 /**
  * Fragment that displays buttons whose interactions are recorded.
  */
+@AndroidEntryPoint
 class ButtonsFragment : Fragment() {
 
-    private lateinit var logger: LoggerLocalDataSource
-    private lateinit var navigator: AppNavigator
+    @Inject
+    lateinit var logger: LoggerDataSource
+    @Inject lateinit var navigator: AppNavigator
 
     override fun onCreateView(
         inflater: LayoutInflater,
