@@ -25,6 +25,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.android.hilt.LogApplication
 import com.example.android.hilt.R
+import com.example.android.hilt.data.InMemoryLogger
 import com.example.android.hilt.data.LoggerDataSource
 import com.example.android.hilt.data.LoggerLocalDataSource
 import com.example.android.hilt.navigator.AppNavigator
@@ -38,6 +39,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class ButtonsFragment : Fragment() {
 
+    @InMemoryLogger
     @Inject
     lateinit var logger: LoggerDataSource
     @Inject lateinit var navigator: AppNavigator
@@ -57,11 +59,11 @@ class ButtonsFragment : Fragment() {
     }
 
     private fun populateFields(context: Context) {
-        logger = (context.applicationContext as LogApplication).
-            serviceLocator.loggerLocalDataSource
-
-        navigator = (context.applicationContext as LogApplication).
-            serviceLocator.provideNavigator(requireActivity())
+//        logger = (context.applicationContext as LogApplication).
+//            serviceLocator.loggerLocalDataSource
+//
+//        navigator = (context.applicationContext as LogApplication).
+//            serviceLocator.provideNavigator(requireActivity())
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
