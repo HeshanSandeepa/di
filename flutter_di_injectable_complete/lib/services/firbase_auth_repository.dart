@@ -3,7 +3,7 @@ import 'package:injectable/injectable.dart';
 
 import '../ data/database.dart';
 
-@Injectable(as: AuthRepository)
+@Singleton(as: AuthRepository)
 class FirebaseAuthRepository extends AuthRepository {
   final Database _database;
 
