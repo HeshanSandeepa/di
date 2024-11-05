@@ -62,8 +62,11 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
 
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.mockito:mockito-core:3.4.6'
+    testImplementation 'org.mockito:mockito-core:5.2.0'
     testImplementation 'android.arch.core:core-testing:1.1.1'
+    androidTestImplementation project(':app')
+    androidTestImplementation project(':app')
+    androidTestImplementation project(':app')
 
     def androidx_test_version = "1.4.0"
     androidTestImplementation "androidx.test:runner:$androidx_test_version"
