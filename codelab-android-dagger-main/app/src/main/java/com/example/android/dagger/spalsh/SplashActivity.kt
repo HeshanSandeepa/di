@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.dagger.main
+package com.example.android.dagger.spalsh
 
 import android.content.Intent
 import android.os.Bundle
@@ -29,13 +29,13 @@ import com.example.android.dagger.settings.SettingsActivity
 import com.example.android.dagger.user.UserManager
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
 
     @Inject
      lateinit var userManager: UserManager
 
     @Inject
-     lateinit var mainViewModel: MainViewModel
+     lateinit var mainViewModel: SplashViewModel
 
     /**
      * If the User is not registered, RegistrationActivity will be launched,
