@@ -23,7 +23,7 @@ import org.junit.Test
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.`when` as whenever
 
-class MainViewModelTest {
+class SplashViewModelTest {
 
     private lateinit var userDataRepository: UserDataRepository
     private lateinit var viewModel: MainViewModel
