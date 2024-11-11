@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.dagger.spalsh
+package com.example.android.dagger.splash
 
 import com.example.android.dagger.user.UserDataRepository
 import javax.inject.Inject
