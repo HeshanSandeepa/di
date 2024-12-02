@@ -1,0 +1,19 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml:2:13-3:68
+INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml:2:13-3:68
+INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml:2:13-3:68
+	package
+		ADDED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml:3:16-65
+		INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml
+		INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml
+	xmlns:android
+		ADDED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml:2:23-81
+uses-sdk
+INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml reason: use-sdk injection requested
+INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml
+INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml
+	android:minSdkVersion
+		INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml
+		ADDED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml
+		INJECTED from /Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml

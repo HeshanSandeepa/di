@@ -1,0 +1,8 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.android.dagger.testFixtures" >
+4
+5    <uses-sdk android:minSdkVersion="14" />
+5-->/Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/build/intermediates/tmp/ProcessLibraryManifest/testFixtures/debug/tempAndroidManifest12900183518515635405.xml
+6
+7</manifest>
