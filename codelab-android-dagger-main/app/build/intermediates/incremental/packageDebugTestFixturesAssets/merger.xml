@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/src/testFixtures/assets"/></dataSet><dataSet config="testFixturesDebug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/freshmilksoftware/Stack/di/codelab-android-dagger-main/app/src/testFixturesDebug/assets"/></dataSet></merger>
