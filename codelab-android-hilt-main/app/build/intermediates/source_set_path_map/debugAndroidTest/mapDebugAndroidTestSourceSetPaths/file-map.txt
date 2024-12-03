@@ -1,6 +1,0 @@
-com.example.android.hilt.test.app-jetified-core-1.6.1-0 /Users/freshmilksoftware/.gradle/caches/transforms-4/5bb26c743d891777592a40b650884fdc/transformed/jetified-core-1.6.1/res
-com.example.android.hilt.test.app-jetified-tracing-1.2.0-1 /Users/freshmilksoftware/.gradle/caches/transforms-4/c273ab14d29046fc3ec29115a6838dfe/transformed/jetified-tracing-1.2.0/res
-com.example.android.hilt.test.app-androidTest-2 /Users/freshmilksoftware/Stack/di/codelab-android-hilt-main/app/build/generated/res/resValues/androidTest/debug
-com.example.android.hilt.test.app-mergeDebugAndroidTestResources-3 /Users/freshmilksoftware/Stack/di/codelab-android-hilt-main/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.android.hilt.test.app-mergeDebugAndroidTestResources-4 /Users/freshmilksoftware/Stack/di/codelab-android-hilt-main/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.android.hilt.test.app-debugAndroidTest-5 /Users/freshmilksoftware/Stack/di/codelab-android-hilt-main/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

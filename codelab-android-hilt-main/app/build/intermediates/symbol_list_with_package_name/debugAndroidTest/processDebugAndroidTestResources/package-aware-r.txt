@@ -1,3 +1,0 @@
-com.example.android.hilt.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
